@@ -1,0 +1,49 @@
+Package                             Version                         Status
+boost-build                         1.66.0-1                        OK      {1.76.0}
+cmake                               3.23.2-1                        OK      <3.14.0>
+eigen3                              3.4.0-1                         OK      <3.3>
+swig                                4.0.2-1                         OK      <4.0.1>
+
+---
+
+lemon                               1.3.1                           d/l
+spdlog                              1.8.1
+
+
+#####
+
+Package                 default pkg / Version
+automake \              y - <latest>
+autotools-dev \         y - autoconf, automake, libtool
+bison \                 y - <latest>
+flex \                  y - <latest>
+clang \                 y - <latest>
+g++ \                   y - <latest>
+gcc \                   y - <latest>
+git \                   y - <latest>
+lcov \                  n ***
+libffi-dev              y - 3.2.1-2
+libpcre3-dev \          y - need 'lynx' & 'apt-cyg'  https://github.com/transcode-open/apt-cyg
+                        *** must have { libpcre-devel 8.45-1 } or latest version ***
+libreadline-dev \       y - libreadline7
+ncurses                 y - 6.1-1.20190727 | libncurses++w10, libncurses-devel, libncursesw10
+python3-dev \           y - python39-devel
+tcl-dev \               y - tcl, tcl-devel <latest>
+tcllib \                y - ruby-tk
+wget \                  y - <latest>
+zlib1g-dev              y - 1.2.12 | zlib, zlib-devel, zlib0
+
+OpenMP                  y - openmpi ??  libgmp10 & libgomp1-##
+VTune                   n <optional>
+Doxygen                 y - doxygen
+Qt5                     y - qt5-devel-tools, qt5-doc-tools, qt5-linguist-tools
+
+--- others ---
+bash
+make
+lynx
+openssh
+unzip
+zip
+
+*** apt-cyg ***

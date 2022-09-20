@@ -1,0 +1,48 @@
+home\AsicEng\downloads\OpenRoadPrj\OpenROAD\build\CMakeCache.txt
+
+//Path to a file.
+Python3_INCLUDE_DIR:PATH=/usr/include/python3.9
+
+//Path to a library.
+Python3_LIBRARY_DEBUG:FILEPATH=/usr/lib
+
+//Path to a library.
+Python3_LIBRARY_RELEASE:FILEPATH=/usr/lib
+
+https://stackoverflow.com/questions/24174394/cmake-is-not-able-to-find-python-libraries
+
+
+====================================================
+
+
+home\AsicEng\downloads\OpenRoadPrj\OpenROAD\CMakeLists.txt
+
+set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++17 -D_GNU_Source")
+
+====================================================
+
+OpenROAD/src/sta/include/sta/StringUtil.hh:66:10: error: ‘strncasecmp’ was not declared in this scope
+
+
+#include <strings.h>
+
+
+====================================================
+
+OpenROAD/src/sta/search/WritePathSpice.cc:1626:7: error: ‘vasprintf’ was not declared in this scope
+
+
+#define __STDC_WANT_LIB_EXT2__ 1  //Define you want TR 24731-2:2010 extensions
+#define _GNU_SOURCE
+
+#include <stdarg.h>
+#include <stdio.h>
+
+====================================================
+
+/home/AsicEng/downloads/OpenROAD/src/odb/test/cpp/helper.cpp:92:16: error: expected unqualified-id before ‘=’ token
+/home/AsicEng/downloads/OpenROAD/src/odb/test/cpp/helper.cpp:93:6: error: expected primary-expression before ‘->’ token
+
+change "IN3" to "OUT"
+

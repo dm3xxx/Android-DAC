@@ -1,0 +1,8 @@
+C:\ide\cygwin64\bin\mintty.exe -i /Cygwin-Terminal.ico -
+
+
+
+exit
+cygpath -w ~
+
+cygwin.mirror.constant.com

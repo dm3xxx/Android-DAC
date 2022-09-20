@@ -1,0 +1,19 @@
+tar -xf CMake-3.14.0.tar.gz
+cd CMake-3.14.0.tar.gz
+./configure --prefix=/usr/local
+make
+make install
+
+----------------------------------------
+
+tar -xf boost_1_76_0.tar.gz
+
+cd boost_1_76_0.tar.gz
+
+    x-x ./bootstrap.sh --prefix=/usr/?? --with-toolset=--cxxflags=-std=gnu++11 x-x
+
+    need to replace /tools/build/src/engine/build.sh  ->  all '-std=c++11' -> '-std=gnu++11'
+
+./bootstrap.sh
+
+./b2 install --with-iostreams --with-test --with-serialization --with-system --with-thread -j 8
