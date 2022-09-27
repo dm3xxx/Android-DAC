@@ -5,4 +5,12 @@ C:\ide\cygwin64\bin\mintty.exe -i /Cygwin-Terminal.ico -
 exit
 cygpath -w ~
 
-cygwin.mirror.constant.com
+https://cygwin.mirror.constant.com/
+https://mirrors.kernel.org/sourceware/cygwin/
+
+"C:/ide/tmp-cygw/installer/setup-x86_64.exe" --no-admin --no-desktop --no-shortcuts --no-startmenu --quiet-mode --root "c:/ide/cygwin64/" --local-package-dir "c:/ide/cygwin64/installer" --site "https://mirrors.kernel.org/sourceware/cygwin/" --packages %*, make, lynx, openssh, wget, unzip, zip
+
+"C:/ide/tmp-cygw/installer/setup-x86_64.exe" --no-admin --no-desktop --no-shortcuts --no-startmenu --quiet-mode --root "c:/ide/cygwin64/" --local-package-dir "c:/ide/cygwin64/installer" --site "https://cygwin.mirror.constant.com/" --packages %*
+
+
+autoconf,automake,bison,clang,clang-analyzer,doxygen,flex,gcc-core,gcc-g++,git,git-clang-format,libclang8,libffi6,libffi-devel,libncurses++w10,libncurses-devel,libncursesw10,libpcre2-devel,libpcre-devel,libreadline7,libreadline-devel,lynx,make,openssh,python3,python39,python39-devel,qt5-devel-tools,qt5-doc-tools,qt5-linguist-tools,tcl,tcl-devel,unzip,wget,zip,zlib,zlib-devel
